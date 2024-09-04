@@ -32,6 +32,11 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this,CameraActivity::class.java)
             startActivity(i)
         }
+
+        binding.mainChattingApp.setOnClickListener {
+            val i = Intent(this,SplashActivity::class.java)
+            startActivity(i)
+        }
     }
 
 }

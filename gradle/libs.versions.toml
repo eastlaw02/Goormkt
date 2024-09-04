@@ -11,6 +11,9 @@ activity = "1.9.1"
 constraintlayout = "2.1.4"
 tedpermission = "2.2.3"
 tedpermissionNormal = "3.3.0"
+googleGmsGoogleServices = "4.4.2"
+firebaseConfig = "22.0.0"
+design = "28.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -23,8 +26,11 @@ androidx-activity = { group = "androidx.activity", name = "activity", version.re
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 tedpermission = { module = "gun0912.ted:tedpermission", version.ref = "tedpermission" }
 tedpermission-normal = { module = "io.github.ParkSangGwon:tedpermission-normal", version.ref = "tedpermissionNormal" }
+firebase-config = { group = "com.google.firebase", name = "firebase-config", version.ref = "firebaseConfig" }
+design = { group = "com.android.support", name = "design", version = "27.1.1" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 

@@ -2,13 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <!-- Webview 사용 시 인터넷 퍼미션 필요 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-
-    <!-- 카메라 사용 시 필요한 퍼미션 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/> <!-- 파일 쓰기 권한-->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/> <!-- 파일 읽기 권한-->
-    <uses-permission android:name="android.permission.CAMERA"/> <!-- 카메라 권한-->
-    <uses-feature android:name="android.hardware.camera" android:required="true"/> <!-- 카메라 기능 사용 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 카메라 사용 시 필요한 퍼미션 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 파일 쓰기 권한 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 파일 읽기 권한 -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 카메라 권한 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +21,12 @@
         android:theme="@style/Theme.Goormkt"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
         <activity
             android:name=".CameraActivity"
             android:exported="false" />
@@ -41,12 +47,13 @@
         </activity>
 
         <provider
-            android:authorities="com.example.goormkt.fileprovider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.goormkt.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
-            <meta-data android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/file_paths"/>
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
         </provider>
     </application>
 
