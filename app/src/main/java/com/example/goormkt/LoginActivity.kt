@@ -1,13 +1,9 @@
 package com.example.goormkt
 
+import android.content.Intent
 import android.graphics.Color
-import android.os.Build
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.graphics.toColor
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.goormkt.databinding.ActivityLoginBinding
 import com.google.firebase.Firebase
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
@@ -25,7 +21,11 @@ class LoginActivity : AppCompatActivity() {
         window.statusBarColor = Color.parseColor(splash_background)
 
         binding.loginLoginBtn.setBackgroundColor(Color.parseColor(splash_background))
-        binding.loginSigninBtn.setBackgroundColor(Color.parseColor(splash_background))
+        binding.loginSignupBtn.setBackgroundColor(Color.parseColor(splash_background))
 
+        binding.loginSignupBtn.setOnClickListener {
+            val i = Intent(this,SignupActivity::class.java)
+            startActivity(i)
+        }
     }
 }

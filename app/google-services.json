@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "743797634005",
+    "firebase_url": "https://goormkt-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "goormkt",
+    "storage_bucket": "goormkt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743797634005:android:7dd4337f22e79e08edc35c",
+        "android_client_info": {
+          "package_name": "com.example.goormkt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvC5QxtKRU3F3MTb9C_qHdPl0pXZIwK-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
