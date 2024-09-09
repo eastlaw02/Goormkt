@@ -16,6 +16,7 @@ firebaseConfig = "22.0.0"
 design = "28.0.0"
 firebaseAuth = "23.0.0"
 firebaseDatabase = "21.0.0"
+firebaseStorage = "21.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +33,7 @@ firebase-config = { group = "com.google.firebase", name = "firebase-config", ver
 design = { group = "com.android.support", name = "design", version = "27.1.1" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version.ref = "firebaseStorage" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -9,6 +9,13 @@
     android:layout_height="match_parent"
     tools:context=".SignupActivity">
 
+    <ImageView
+        android:id="@+id/signup_profile_img_iv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="50dp"
+        android:src="@drawable/ic_add_to_photos"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -40,6 +47,7 @@
         <EditText
             android:id="@+id/signup_password_et"
             android:hint="비밀번호"
+            android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
