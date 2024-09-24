@@ -73,7 +73,6 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
-
     override fun onStart() {
         super.onStart()
         firebaseAuth.addAuthStateListener(authStateListener)
